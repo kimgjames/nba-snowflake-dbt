@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fct_nba_team_performance
+    description: "Final table for team home-court advantage metrics."
+    columns:
+      - name: team
+        tests:
+          - unique
+          - not_null
+      - name: home_win_pct
+        description: "The percentage of home games won."
+        tests:
+          - not_null
