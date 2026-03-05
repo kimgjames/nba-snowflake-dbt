@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: nba_raw_data
+    database: NBA_RAW
+    schema: BRONZE
+    tables:
+      - name: RAW_BOX_SCORES
